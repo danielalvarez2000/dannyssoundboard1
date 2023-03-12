@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Paytone+One&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap");
+
+
+
+body,
+html {
+    background-color: rgb(12, 230, 175);
+    font-family: 'Paytone One', sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+    padding: 0;
+}
+
+/* With Flexbox, Horizontally and vertically cneter */
+body {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+
+/* Actual Keyboard Keys */
+kbd {
+    display: block;
+    font-size: 4rem;
+    font-family: 'Bungee Shade', cursive;
+}
+
+/* Name of Sound */
+.sound {
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    color: #0b0a0a;
+}
+
+/* Use CSS Grid to display keys */
+.keys {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    position: relative;
+
+}
+
+/* Visual Keys / Squares */
+.key {
+    /* Typography */
+    margin: 1rem;
+    font-size: 1.5rem;
+    padding: 1rem 0.5rem;
+    border-radius: 30px;
+
+    /* Styling of keys */
+    width: 10rem;
+    text-align: center;
+    outline: 1px solid red;
+
+    /* Change mouse pointer */
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    /* Call Transition */
+    transition: all 0.07s ease;
+}
+
+
+/* Transition Animation. Last frame of animation. */
+.playing {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.04);
+    background: rgb(239, 18, 255);
+}
+
+h1 {
+    font-size: 40px;
+    position: relative;
+    bottom: 130px;
+    right: 30px;
+    font-family: 'Bungee Shade', cursive;
+}
