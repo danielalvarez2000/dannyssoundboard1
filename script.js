@@ -28,3 +28,10 @@ keys.forEach(key => {
 window.addEventListener('keydown', playSound);
 window.addEventListener('touchstart', playSound);
 window.addEventListener('click', playSound);
+
+const body = document.querySelector('body');
+const toggle = document.getElementById('toggle');
+toggle.onclick = function () {
+    toggle.classList.toggle('active');
+    body.classList.toggle('active');
+}
