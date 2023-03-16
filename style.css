@@ -29,7 +29,7 @@ body {
 }
 
 body.active {
-    background: rgb(48, 48, 48);
+    background: rgb(145, 0, 0);
 }
 
 /* Actual Keyboard Keys */
