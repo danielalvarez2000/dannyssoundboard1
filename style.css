@@ -29,7 +29,7 @@ body {
 }
 
 body.active {
-    background: rgb(172, 0, 0);
+    background: rgb(48, 48, 48);
 }
 
 /* Actual Keyboard Keys */
@@ -115,6 +115,16 @@ h1 {
         inset 0 -4px 8px rgba(0, 0, 0, 0.1), ;
 }
 
+#toggle.active {
+    background: #fff;
+    box-shadow: inset 0 2px 60px rgba(0, 0, 0, 0.1),
+        inset 0 2px 8px rgba(0, 0, 0, 0.1),
+        inset 0 -4px 8px rgba(0, 0, 0, 0.05),
+}
+
+
+
+
 #toggle .indicator {
     position: absolute;
     top: 0px;
@@ -124,7 +134,7 @@ h1 {
     background: linear-gradient(to bottom, #444, #222);
     border-radius: 50%;
     transform: scale(0.9);
-    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5),
+    box-shadow: 0 8px 40px rgba(255, 255, 255, 0.5),
         inset 0 4px 4px rgba(255, 255, 255, 0.2),
         inset 0 -4px 4px rgba(255, 255, 255, 0.2);
     transition: 0.5s;
@@ -132,4 +142,8 @@ h1 {
 
 #toggle.active .indicator {
     left: 40px;
+    background: linear-gradient(to bottom, #eaeaea, #f9f9f9);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1),
+        inset 0 4px 4px rgba(255, 255, 255, 1),
+        inset 0 -4px 4px rgba(255, 255, 255, 1);
 }
